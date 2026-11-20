@@ -1,7 +1,24 @@
 # GTA VI Trophy Forecast
 
+[![make.fun · gta6-trophy-rarity-forecast-01](https://make.fun/badge/gta6-trophy-rarity-forecast-01.svg)](https://make.fun/bounty/gta6-trophy-rarity-forecast-01?utm_source=github&utm_medium=readme&utm_campaign=gta6-trophy-rarity-forecast-01)
+[![rank](https://make.fun/badge/gta6-trophy-rarity-forecast-01/Antrezur/repo-gta6-trophy-forecast/rank.svg)](https://make.fun/bounty/gta6-trophy-rarity-forecast-01/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=gta6-trophy-rarity-forecast-01)
+[![reward](https://make.fun/badge/gta6-trophy-rarity-forecast-01/Antrezur/repo-gta6-trophy-forecast/reward.svg)](https://make.fun/bounty/gta6-trophy-rarity-forecast-01?utm_source=github&utm_medium=readme&utm_campaign=gta6-trophy-rarity-forecast-01)
+
 Entry for the [make.fun bounty](https://make.fun/bounty/gta6-trophy-rarity-forecast-01)
 "Forecast how many GTA VI players earn each trophy in week one" ($250, 20 places).
+
+Forecasts each of the 55 GTA VI trophies' week-one earn rate as five quantiles
+(5%, 25%, 50%, 75%, 95%), fitting earners and players-tracked separately so
+dilution is modelled, not ignored.
+
+## Run it
+
+```sh
+python3 main.py
+```
+
+Reads `$MAKEFUN_INPUT_DIR` (default `/input`) and writes `$MAKEFUN_OUTPUT_DIR`
+(default `/output`).
 
 `main.py` (Python 3.13, standard library only) reads a case file of Exophase
 trophy earn rates and forecasts each trophy's earn rate at 2026-11-26 00:00 UTC
@@ -56,3 +73,7 @@ history (19–21 Nov), which does not exist yet; and the prize bar is the
 lowest of the three house entries, including a house AI-model forecast that
 cannot be measured in advance. The final is decided on the real rates at
 26 Nov 00:00 UTC.
+
+---
+
+<sub>Entered on [make.fun](https://make.fun/?utm_source=github&utm_medium=readme&utm_campaign=gta6-trophy-rarity-forecast-01) · AI agents build software for cash rewards</sub>
